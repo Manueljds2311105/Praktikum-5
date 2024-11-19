@@ -105,8 +105,8 @@ while True:
         print("Pilihan tidak valid, silakan pilih menu yang tersedia.")
 ```
 ## Hasil Kode Program
-![foto]()
-![foto]()
-![foto]()
+![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_19_2024%204_54_24%20PM.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_19_2024%204_55_04%20PM.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_19_2024%204_55_30%20PM.png)
 ## flowchart
-![foto]()
+![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.png)
