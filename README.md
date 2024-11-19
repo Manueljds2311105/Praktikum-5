@@ -8,7 +8,7 @@ Dosen Pengampu: Agung Nugroho, S.Kom., M.Kom.
 
 Mata Kuliah: Bahasa Pemograman
 ## Kode Program
-```pyton
+```python
 
 # Program Input Nilai Mahasiswa
 # Menggunakan Dictionary
