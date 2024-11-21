@@ -111,3 +111,19 @@ while True:
 ## flowchart
 ![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.png)
 ## Penjelasan
+1. Tampilkan Data (Lihat Data)
+- Fungsi: Menampilkan seluruh data mahasiswa beserta nilai tugas, UTS, UAS, dan nilai akhir.
+- Nilai akhir dihitung dengan rumus: Nilai Akhir=(30%×Tugas)+(35%×UTS)+(35%×UAS)
+- Jika tidak ada data, akan muncul pesan bahwa data tidak tersedia.
+2. Tambah Data
+- Fungsi: Memasukkan data baru mahasiswa ke dalam dictionary data_mahasiswa.
+- Data yang dimasukkan meliputi:
+  
+  NIM (sebagai kunci)
+  
+  Nama
+  
+  Nilai Tugas, UTS, dan UAS
+3. Ubah Data
+Fungsi: Memodifikasi data mahasiswa yang sudah ada berdasarkan NIM.
+Jika NIM tidak ditemukan, program akan menampilkan pesan error.
