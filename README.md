@@ -125,5 +125,13 @@ while True:
   
   Nilai Tugas, UTS, dan UAS
 3. Ubah Data
-Fungsi: Memodifikasi data mahasiswa yang sudah ada berdasarkan NIM.
-Jika NIM tidak ditemukan, program akan menampilkan pesan error.
+- Fungsi: Memodifikasi data mahasiswa yang sudah ada berdasarkan NIM.
+- Jika NIM tidak ditemukan, Data dengan NIM tersebut tidak ditemukan!.
+4. Hapus Data
+- Fungsi: Menghapus data mahasiswa berdasarkan NIM.
+- Jika NIM tidak ditemukan, Data dengan NIM tersebut tidak ditemukan!.
+5. Cari Data
+- Fungsi: Mencari data mahasiswa berdasarkan NIM.
+- Menampilkan data spesifik mahasiswa, termasuk nilai akhir, jika NIM ditemukan.
+6. Keluar
+- Fungsi: Mengakhiri program.
