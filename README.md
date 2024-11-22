@@ -115,6 +115,9 @@ while True:
 - Fungsi: Menampilkan seluruh data mahasiswa beserta nilai tugas, UTS, UAS, dan nilai akhir.
 - Nilai akhir dihitung dengan rumus: Nilai Akhir=(30%×Tugas)+(35%×UTS)+(35%×UAS)
 - Jika tidak ada data, akan muncul pesan bahwa data tidak tersedia.
+
+Menggunakan perulangan while True untuk membuat menu interaktif.
+
 2. Tambah Data
 - Fungsi: Memasukkan data baru mahasiswa ke dalam dictionary data_mahasiswa.
 - Data yang dimasukkan meliputi:
