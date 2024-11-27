@@ -103,10 +103,8 @@ data_mahasiswa = {}
 ```
 - Fungsi: Membuat dictionary kosong bernama data_mahasiswa untuk menyimpan data mahasiswa.
 - Struktur Data:
-
-  Kunci (key): NIM mahasiswa.
-  
-  Nilai (value): Dictionary berisi nama mahasiswa dan nilai tugas, UTS, serta UAS.
+  - Kunci (key): NIM mahasiswa.
+  - Nilai (value): Dictionary berisi nama mahasiswa dan nilai tugas, UTS, serta UAS.
 ```python
 while True:
     menu = input("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar]: ")
@@ -205,12 +203,9 @@ elif menu.lower() == 'c':
         print(f"Data dengan NIM {nim} tidak ditemukan!")
 ```
 - Fungsi:
-  
-  Meminta NIM.
-  
-  Jika NIM ada Menampilkan data mahasiswa dan nilai akhir.
-  
-  Jika tidak, tampilkan pesan error.
+  - Meminta NIM.
+  - Jika NIM ada Menampilkan data mahasiswa dan nilai akhir.
+  - Jika tidak, tampilkan pesan error.
 ```python
 elif menu.lower() == 'k':
     break
@@ -218,5 +213,6 @@ else:
     print()
     print("Pilihan Tidak Valid")
 ```
-- Fungsi: Menghentikan perulangan dengan break.
-- Menangani input menu yang tidak valid.
+- Fungsi:
+    - Menghentikan perulangan dengan break.
+    - Menangani input menu yang tidak valid.
