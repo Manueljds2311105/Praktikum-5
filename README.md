@@ -131,12 +131,9 @@ for nim, data in data_mahasiswa.items():
     no += 1
 ```
 - Fungsi: Membuat header tabel yang rapi menggunakan karakter | dan =.
-- Fungsi:
+- Fungsi2:
   - Iterasi semua data dalam data_mahasiswa.
-  - Menghitung nilai akhir dengan bobot:
-    30% untuk tugas.
-    35% untuk UTS.
-    35% untuk UAS.
+  - Menghitung nilai akhir dengan bobot 30% untuk tugas, 35% untuk UTS, 35% untuk UAS.
   - Menampilkan data secara berformat dengan f-string.
   - no adalah nomor urut.
 ```python
