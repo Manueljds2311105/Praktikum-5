@@ -15,7 +15,7 @@ Mata Kuliah: Bahasa Pemograman
 data_mahasiswa = {}
 
 while True:
-    menu = input("\n(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar: ")
+    menu = input("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar]: ")
 
     if menu.lower() == 'l':
         if data_mahasiswa:
@@ -38,28 +38,30 @@ while True:
             print("="*61)
 
     elif menu.lower() == 't':
+        print()
         print("Tambah Data")
         nim = input("NIM: ")
         nama = input("Nama: ")
-        tugas = float(input("Nilai Tugas: "))
         uts = float(input("Nilai UTS: "))
         uas = float(input("Nilai UAS: "))
+        tugas = float(input("Nilai Tugas: "))
         data_mahasiswa[nim] = {'nama': nama, 'tugas': tugas, 'uts': uts, 'uas': uas}
-        print("Data berhasil ditambahkan!")
 
     elif menu.lower() == 'u':
+        print()
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             print("Masukkan data baru:")
             data_mahasiswa[nim]['nama'] = input("Nama: ")
-            data_mahasiswa[nim]['tugas'] = float(input("Nilai Tugas: "))
             data_mahasiswa[nim]['uts'] = float(input("Nilai UTS: "))
             data_mahasiswa[nim]['uas'] = float(input("Nilai UAS: "))
-            print("Data berhasil diubah!")
+            data_mahasiswa[nim]['tugas'] = float(input("Nilai Tugas: "))
+            print(("Data berhasil diubah!"))
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
     elif menu.lower() == 'h':
+        print()
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             del data_mahasiswa[nim]
@@ -68,32 +70,31 @@ while True:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
     elif menu.lower() == 'c':
+        print()
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             data = data_mahasiswa[nim]
             nilai_akhir = (data['tugas'] * 0.3) + (data['uts'] * 0.35) + (data['uas'] * 0.35)
             print("\nData Mahasiswa")
-            print("="*25)
+            print("="*24)
             print(f"NIM         : {nim}")
             print(f"Nama        : {data['nama']}")
-            print(f"Nilai Tugas : {data['tugas']:.0f}")
             print(f"Nilai UTS   : {data['uts']:.0f}")
             print(f"Nilai UAS   : {data['uas']:.0f}")
+            print(f"Nilai Tugas : {data['tugas']:.0f}")
             print(f"Nilai Akhir : {nilai_akhir:.2f}")
-            print("="*25)
+            print("="*24)
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
     elif menu.lower() == 'k':
         break
-
     else:
-        print("Pilih menu yang tersedia")
+        print()
+        print("Pilihan Tidak Valid")
 ```
 ## Hasil Kode Program
-![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_19_2024%204_54_24%20PM.png)
-![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_19_2024%204_55_04%20PM.png)
-![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_19_2024%204_55_30%20PM.png)
+![foto](https://github.com/Manueljds2311105/foto/blob/69288e90ff5b730990a80215adcb2f0b0c0835ad/Praktikum%205.py%20-%20Visual%20Studio%20Code%20%5BAdministrator%5D%2011_27_2024%209_15_35%20AM.png)
 ## flowchart
 ![foto](https://github.com/Manueljds2311105/foto/blob/91c436c5940ff771fdb473f548f4ce3c1be9ac9f/Praktikum%205.png)
 ## Penjelasan
