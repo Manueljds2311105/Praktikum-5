@@ -56,7 +56,7 @@ while True:
             data_mahasiswa[nim]['uts'] = float(input("Nilai UTS: "))
             data_mahasiswa[nim]['uas'] = float(input("Nilai UAS: "))
             data_mahasiswa[nim]['tugas'] = float(input("Nilai Tugas: "))
-            print(("Data berhasil diubah!"))
+            print("Data berhasil diubah!")
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
