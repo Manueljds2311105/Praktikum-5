@@ -45,6 +45,7 @@ while True:
             data_mahasiswa[nim]['uts'] = float(input("Nilai UTS: "))
             data_mahasiswa[nim]['uas'] = float(input("Nilai UAS: "))
             data_mahasiswa[nim]['tugas'] = float(input("Nilai Tugas: "))
+            print(("Data berhasil diubah!"))
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
@@ -53,6 +54,7 @@ while True:
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             del data_mahasiswa[nim]
+            print("Data berhasil dihapus!")
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
@@ -76,7 +78,6 @@ while True:
 
     elif menu.lower() == 'k':
         break
-
     else:
         print()
-        print("Pilih menu yang tersedia")
+        print("Pilihan Tidak Valid")
