@@ -4,7 +4,7 @@
 data_mahasiswa = {}
 
 while True:
-    menu = input("\n(T)ambah, (U)bah, (H)apus, (C)ari, (L)ihat, (K)eluar: ")
+    menu = input("\n[(L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar]: ")
 
     if menu.lower() == 'l':
         if data_mahasiswa:
@@ -27,49 +27,50 @@ while True:
             print("="*61)
 
     elif menu.lower() == 't':
+        print()
         print("Tambah Data")
         nim = input("NIM: ")
         nama = input("Nama: ")
-        tugas = float(input("Nilai Tugas: "))
         uts = float(input("Nilai UTS: "))
         uas = float(input("Nilai UAS: "))
+        tugas = float(input("Nilai Tugas: "))
         data_mahasiswa[nim] = {'nama': nama, 'tugas': tugas, 'uts': uts, 'uas': uas}
-        print("Data berhasil ditambahkan!")
 
     elif menu.lower() == 'u':
+        print()
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             print("Masukkan data baru:")
             data_mahasiswa[nim]['nama'] = input("Nama: ")
-            data_mahasiswa[nim]['tugas'] = float(input("Nilai Tugas: "))
             data_mahasiswa[nim]['uts'] = float(input("Nilai UTS: "))
             data_mahasiswa[nim]['uas'] = float(input("Nilai UAS: "))
-            print("Data berhasil diubah!")
+            data_mahasiswa[nim]['tugas'] = float(input("Nilai Tugas: "))
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
     elif menu.lower() == 'h':
+        print()
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             del data_mahasiswa[nim]
-            print("Data berhasil dihapus!")
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
     elif menu.lower() == 'c':
+        print()
         nim = input("NIM: ")
         if nim in data_mahasiswa:
             data = data_mahasiswa[nim]
             nilai_akhir = (data['tugas'] * 0.3) + (data['uts'] * 0.35) + (data['uas'] * 0.35)
             print("\nData Mahasiswa")
-            print("="*25)
+            print("="*24)
             print(f"NIM         : {nim}")
             print(f"Nama        : {data['nama']}")
-            print(f"Nilai Tugas : {data['tugas']:.0f}")
             print(f"Nilai UTS   : {data['uts']:.0f}")
             print(f"Nilai UAS   : {data['uas']:.0f}")
+            print(f"Nilai Tugas : {data['tugas']:.0f}")
             print(f"Nilai Akhir : {nilai_akhir:.2f}")
-            print("="*25)
+            print("="*24)
         else:
             print(f"Data dengan NIM {nim} tidak ditemukan!")
 
@@ -77,4 +78,5 @@ while True:
         break
 
     else:
+        print()
         print("Pilih menu yang tersedia")
