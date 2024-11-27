@@ -147,7 +147,7 @@ for nim, data in data_mahasiswa.items():
     tugas = float(input("Nilai Tugas: "))
     data_mahasiswa[nim] = {'nama': nama, 'tugas': tugas, 'uts': uts, 'uas': uas}
 ```
-- Fungs:
+- Fungsi:
     - Meminta input pengguna untuk NIM, nama, dan nilai.
     - Nilai UTS, UAS, dan Tugas diubah ke tipe float.
     - Menambahkan data ke dictionary data_mahasiswa dengan NIM sebagai kunci.
@@ -165,7 +165,7 @@ elif menu.lower() == 'u':
     else:
         print(f"Data dengan NIM {nim} tidak ditemukan!")
 ```
-- Fungsi
+- Fungsi:
     - Meminta NIM.
     - Jika NIM ada di data_mahasiswa, data lama diperbarui dengan data baru.
     - Jika NIM tidak ditemukan, tampilkan pesan error.
@@ -179,7 +179,7 @@ elif menu.lower() == 'h':
     else:
         print(f"Data dengan NIM {nim} tidak ditemukan!")
 ```
-- Fungsi
+- Fungsi:
   - Meminta NIM
   - Jika NIM ditemukan, data dihapus menggunakan del.
   - Jika NIM tidak ditemukan, tampilkan pesan error.
